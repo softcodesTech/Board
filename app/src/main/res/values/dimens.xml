@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // Texts
+
+    // Views
+
+    <dimen name="settings_padding">20dp</dimen>
+  <dimen name="settings_header_padding">15dp</dimen>
+</resources>

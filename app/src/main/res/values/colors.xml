@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AB3064</color>
+    <color name="colorPrimaryDark">#AB3064</color>
+    <color name="colorAccent">#AB3064</color>
+    <color name="mainText">#2D313D</color>
+    <color name="textAlt">#8D8F97</color>
+    <color name="mainBackground">#ffffff</color>
+
+    <!--colors for light mode-->
+    <color name="bottomNavigationBackground">#F7F7F7</color>
+
+    <color name="red">#ec1414</color>
+
+    <color name="light_background">#f2f2f2</color>
+    <color name="blue_selected">#AB3064</color>
+    <color name="blue_delfault">#AB3064</color>
+</resources>

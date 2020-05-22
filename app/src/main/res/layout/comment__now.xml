@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comment_Now">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comment_recylcerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="745dp"
+            tools:layout_editor_absoluteY="-51dp" />
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:hint="Type your comment here.."
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:maxLines="10"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/commented"
+            android:background="@drawable/box2"
+            android:layout_below="@+id/comment_recylcerView"
+            android:gravity="center_horizontal" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POST"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="26dp"
+            android:onClick="post_a_comment"
+            android:background="@drawable/button_bg"
+            android:layout_below="@id/comment_recylcerView"
+            android:layout_toRightOf="@+id/commented"/>
+
+    </RelativeLayout>
+
+</ScrollView>

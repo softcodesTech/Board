@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_03"
+    android:orientation="vertical">
+
+    <com.agrawalsuneet.dotsloader.loaders.ZeeLoader
+        android:id="@+id/imgshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        app:zee_animDuration="300"
+        app:zee_distanceMultiplier="4"
+        android:layout_marginTop="200dp"
+        app:zee_dotsRadius="24dp"
+        app:zee_firstDotsColor="@color/blue_selected"
+        app:zee_secondDotsColor="@color/blue_delfault"
+        android:layout_marginLeft="50dp" />
+
+</LinearLayout>

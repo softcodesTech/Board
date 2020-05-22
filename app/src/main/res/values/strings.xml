@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BSU e-NOTICE BOARD</string>
+    <string name="privacy">Terms and Privacy</string>
+    <string name="notifications">Notifications</string>
+    <string name="news_and_updates">News &amp; updates</string>
+    <string name="general">General</string>
+    <string name="about">About</string>
+    <string name="rate_app">Rate app</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="logout">Logout</string>
+
+</resources>

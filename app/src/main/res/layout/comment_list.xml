@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            tools:ignore="UselessParent">
+            <com.joooonho.SelectableRoundedImageView
+                android:layout_width="100dp"
+                android:padding="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo"
+                app:sriv_border_color="@color/colorPrimary"
+                android:id="@+id/person_image"
+                app:sriv_border_width="2dp"
+                app:sriv_oval="true" />
+
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/person_image"
+                android:fontFamily="@font/vare"
+                android:text="Pascal"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/comment_desc"
+                android:layout_toRightOf="@id/person_image"
+                android:fontFamily="@font/opensanslight"
+                android:text="5 days ago"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/comment_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:maxLength="50"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/person_image"
+                android:layout_below="@id/person_name"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/opensanslight"
+                android:text="I don't know if I knew"
+                android:ellipsize="end"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/share_loved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/like_me"
+                android:onClick="liked"
+                android:layout_toRightOf="@id/person_image"
+                android:layout_below="@id/comment_time"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="53"
+                android:fontFamily="@font/vare"
+                android:id="@+id/most_likes"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                android:layout_toRightOf="@id/share_loved"
+                android:layout_below="@id/comment_time"
+                android:textColor="@color/colorPrimary"
+                android:layout_toEndOf="@id/share_loved"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp" />
+            <ImageView
+                android:id="@+id/reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dislike_me"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/share_loved"
+                android:layout_below="@id/comment_time"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/reply"
+                android:id="@+id/comment_count"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/comment_time"
+                android:text="2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/comment_count"
+                android:id="@+id/reply_this"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/comment_time"
+                android:text="Reply"/>
+        </RelativeLayout>
+
+</LinearLayout>

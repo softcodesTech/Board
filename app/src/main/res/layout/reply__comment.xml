@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Reply_Comment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/reply_image"/>
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reply_image"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/opensanslight"
+            android:textAllCaps="true"
+            android:text="BSU Holy Prayer"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:id="@+id/catergory_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/news_title"
+            android:layout_marginStart="5dp"
+            android:text="Chaplaincy"
+            android:fontFamily="@font/vare"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/date_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/news_title"
+            android:layout_toRightOf="@id/catergory_news"
+            android:text="10/05/2020"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/opensanslight"
+            android:text="This is amazing , we bring news across your campus wall\n I love my work so much to the extent that I forgot to sleep..Hmmmm"
+            android:id="@+id/news_cast"
+            android:layout_below="@id/catergory_news"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/opensanslight"
+            android:gravity="center"
+            android:text="Write your first comment..."
+            android:onClick="writing_a_comment"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/write_a_comment"
+            android:layout_below="@id/news_cast"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

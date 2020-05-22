@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.board">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/bsu"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bsu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Comment_Now"
+            android:label="Comments"
+            android:parentActivityName=".Reply_Comment"/>
+        <activity android:name=".Check_intern" />
+        <activity
+            android:name=".ChangePassword"
+            android:label="Reset Password"
+            android:parentActivityName=".ForgotPassword" />
+        <activity
+            android:name=".Reply_Comment"
+            android:parentActivityName=".Ruharo_campus" />
+        <activity
+            android:name=".About"
+            android:theme="@style/AppTheme_dialog" />
+        <activity android:name=".Notification_BSU" />
+        <activity android:name=".Display_Videos" />
+        <activity
+            android:name=".EditProfile"
+            android:label="My Profile"
+            android:parentActivityName=".Bsu_Settings"
+            android:theme="@style/AppThemesoftcodes" />
+        <activity
+            android:name=".Applied_Sciences"
+            android:label="Applied Sciences"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".General_Settings"
+            android:label="Enable Dark Mode"
+            android:parentActivityName=".Bsu_Settings" />
+        <activity
+            android:name=".FeedbackSuggestion"
+            android:label="Send us Your Feedback"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Ruharo_campus"
+            android:label="Ruharo Campus"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Education"
+            android:label="Faculty of Education"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Business"
+            android:label="Business"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Law"
+            android:label="Law"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Guild"
+            android:label="Guild Council"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Library"
+            android:label="Library"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Ar_office"
+            android:label="AR&apos;S Office"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Finance"
+            android:label="Finance"
+            android:parentActivityName=".Board_Categories" />
+        <activity
+            android:name=".Chaplaincy"
+            android:label="Chaplaincy"
+            android:parentActivityName=".Board_Categories" />
+        <activity android:name=".Home_Searchable_Data" />
+        <activity android:name=".Logout" />
+        <activity
+            android:name=".Bsu_Favorites"
+            android:label="My Favorites"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Bsu_Settings"
+            android:label="Settings"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Notice_Videos"
+            android:label="Videos"
+            android:parentActivityName=".Home" />
+        <activity android:name=".Home">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/AppThemesoftcodes" />
+        <activity
+            android:name=".Register"
+            android:theme="@style/AppThemesoftcodes" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppThemesoftcodes" />
+        <activity
+            android:name=".Welcome"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Board_Categories"
+            android:label="News Category"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

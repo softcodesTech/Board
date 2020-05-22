@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Welcome">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our God Regins"
+        android:fontFamily="@font/beaut"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ObsoleteLayoutParam,RtlCompat" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bsuu12212">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="82dp"
+        android:text="ALREADY A CUSTOMER? SIGN IN"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/btn_login"
+        android:visibility="visible"
+        android:textColor="#fff"
+        android:onClick="skip_already_customer"
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="280dp" />
+<!--        android:onClick="skip_already_customer"-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="NEW USER? CREATE AN ACCOUNT"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/btn_sign_up"
+            android:visibility="visible"
+            android:textColor="#fff"
+            android:onClick="skipthis"
+            android:background="@drawable/button_bg"
+            android:layout_marginLeft="280dp" />
+<!--        android:onClick="skipthis"-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="22dp"
+            android:text="SKIP SIGN IN"
+            android:id="@+id/btn_profile"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible"
+            android:textColor="#fff"
+            android:background="@drawable/button_bg"
+            android:onClick="skip_to_register"
+
+            android:layout_marginLeft="280dp" />
+<!--        android:onClick="skip_to_register"-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="This app provides accurate,Reliable,and Transparent \ninformation to the BSU community"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#000"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+
+
+<!--        />-->
+
+<!--    <com.agrawalsuneet.dotsloader.loaders.PullInLoader-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/myLoaderProgress"-->
+<!--        android:layout_marginTop="90dp"-->
+<!--        android:layout_marginStart="180dp"-->
+<!--        app:pullin_dotsColor="@color/colorPrimary"-->
+<!--        app:lazyloader_animDur="300"-->
+<!--        app:lazyloader_dotsDist="10dp"-->
+<!--        app:lazyloader_dotsRadius="16dp"-->
+<!--        app:lazyloader_firstDelayDur="150"-->
+<!--        app:lazyloader_firstDotColor="#C21F13"-->
+<!--        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"-->
+<!--        app:lazyloader_secondDelayDur="300"-->
+<!--        app:lazyloader_secondDotColor="#6BB416"-->
+<!--        app:lazyloader_thirdDotColor="#B3A31D"-->
+<!--        android:layout_marginLeft="180dp" />-->
+    <TextView
+        android:id="@+id/powered_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:gravity="bottom|center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Powered By Softcodes Tech(www.softcodes.tech), and Next256"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="italic"
+        tools:ignore="ObsoleteLayoutParam" />
+<!--        <TextView-->
+<!--            style="italic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:gravity="bottom|center"-->
+<!--            android:text="©Attend 2020"-->
+<!--            android:textSize="28sp" />-->
+    </LinearLayout>
+</LinearLayout>
