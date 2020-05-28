@@ -8,12 +8,19 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <androidx.recyclerview.widget.RecyclerView
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/business_recylcerView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:layout_editor_absoluteX="745dp"-->
+    <!--        tools:layout_editor_absoluteY="-51dp" />-->
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
         android:id="@+id/business_recylcerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="745dp"
-        tools:layout_editor_absoluteY="-51dp" />
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="6"
+        app:shimmer_demo_layout_manager_type="linear_vertical" />
     <ProgressBar
         android:id="@+id/progressBar1"
         android:layout_width="wrap_content"

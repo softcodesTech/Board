@@ -51,4 +51,5 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
 }

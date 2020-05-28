@@ -1,9 +1,5 @@
 package com.example.board;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -14,19 +10,20 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.board.adapters.Business_Adapter;
 import com.example.board.adapters.Comment_Adapter;
-import com.example.board.util.Business_News;
 import com.example.board.util.Comment_News;
 
 import org.json.JSONArray;
@@ -57,7 +54,6 @@ public class Comment_Now extends AppCompatActivity {
         recyclerView = findViewById(R.id.comment_recylcerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
         productList = new ArrayList<>();
         loadbusiness_news();
     }
@@ -101,7 +97,7 @@ public class Comment_Now extends AppCompatActivity {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            
+
                         }
                     }
                 },
