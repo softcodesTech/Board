@@ -23,7 +23,7 @@ public class Login extends AppCompatActivity {
     EditText username, password;
 
     String finalResult;
-    String HttpURL = "http://softcodes.tech/noticeboard/user_login.php";
+    String HttpURL = "http://next256.com/noticeboard/user_login.php";
     ProgressDialog progressDialog;
     public static String UserEmail = "";
     HashMap<String, String> hashMap = new HashMap<>();
@@ -172,7 +172,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void register_new_user(View view) {
-        Intent back_to_login=new Intent(getApplicationContext(),Register.class);
+        Intent back_to_login=new Intent(getApplicationContext(),MainActivity.class);
         startActivity(back_to_login);
         finish();
     }

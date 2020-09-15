@@ -55,12 +55,7 @@ public class EditProfile extends AppCompatActivity {
         phone = findViewById(R.id.update_phone_number);
         password = findViewById(R.id.update_password);
 
-//        if (savedInstanceState != null) {
-//            email_holder = savedInstanceState.getString("Email");
-//            password_holder = savedInstanceState.getString("Pasword");
-//            email.setText(email_holder);
-//            password.setText(password_holder);
-//        }
+
 
         SharedPreferences prefs = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
         String name = prefs.getString("userEmail", "Enter your email");//"No name defined" is the default value.
@@ -104,16 +99,7 @@ public class EditProfile extends AppCompatActivity {
         new update_user_data().execute();
     }
 
-//    void init(){
-//
-//        Intent intent = getIntent();
-//        email_holder = intent.getStringExtra(Login.UserEmail);
-//        email.setText(email_holder);
-//        password_holder = intent.getStringExtra(Login.UserPassword);
-//        password.setText(password_holder);
-//
-//
-//    }
+
 
     @SuppressLint("StaticFieldLeak")
     public class update_user_data extends AsyncTask<String, Void, Boolean> {
@@ -152,7 +138,7 @@ public class EditProfile extends AppCompatActivity {
 
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://softcodes.tech/noticeboard/update_user.php"); // link to connect to database
+                        "http://newsportal.next256.com/update_user.php"); // link to connect to database
                 httpPost.setEntity(new UrlEncodedFormEntity(insert));
 
                 HttpResponse response = httpClient.execute(httpPost);

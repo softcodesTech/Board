@@ -32,31 +32,7 @@ public class Welcome extends AppCompatActivity {
         Button profile = findViewById(R.id.btn_profile);
         Button login = findViewById(R.id.btn_login);
         Button sign_up = findViewById(R.id.btn_sign_up);
-//        PrefManager prefManager = PrefManager.getInstance(Welcome.this);
-//        if(prefManager.isLoggedIn()) {
-////            login.setVisibility(View.GONE);
-////            sign_up.setVisibility(View.GONE);
-//            profile.setOnClickListener(new View.OnClickListener(){
-//                @Override
-//                public void onClick(View v) {
-//                    startActivity(new Intent(Welcome.this,Home.class));
-//                }
-//            });
-//        } else {
-//            profile.setVisibility(View.GONE);
-//            login.setOnClickListener(new View.OnClickListener(){
-//                @Override
-//                public void onClick(View v) {
-//                    startActivity(new Intent(Welcome.this,Login.class));
-//                }
-//            });
-//            sign_up.setOnClickListener(new View.OnClickListener(){
-//                @Override
-//                public void onClick(View v) {
-//                    startActivity(new Intent(Welcome.this,Register.class));
-//                }
-//            });
-//        }
+
     }
 
     public void skipthis(View view) {

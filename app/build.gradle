@@ -7,13 +7,14 @@ android {
 
     defaultConfig {
         applicationId "com.example.board"
-        minSdkVersion 16
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         useLibrary 'org.apache.http.legacy'
+
     }
 
     buildTypes {

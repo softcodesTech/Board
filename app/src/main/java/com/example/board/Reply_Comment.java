@@ -27,7 +27,7 @@ import java.util.List;
 
 public class Reply_Comment extends AppCompatActivity {
 
-    private static final String FULL_STORY = "http://softcodes.tech/newsportal/fully_story_api.php";
+    private static final String FULL_STORY = "http://newsportal.next256.com/fully_story_api.php";
     List<Reply_News> productList;
     RecyclerView recyclerView;
     @Override

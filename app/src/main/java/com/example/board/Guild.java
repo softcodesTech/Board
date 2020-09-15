@@ -25,7 +25,7 @@ import java.util.List;
 
 public class Guild extends AppCompatActivity {
 
-    private static final String URL_PRODUCTS = "http://softcodes.tech/newsportal/guild_api.php";
+    private static final String URL_PRODUCTS = "http://newsportal.next256.com/guild_api.php";
     List<Business_News> productList;
     RecyclerView recyclerView;
     @Override

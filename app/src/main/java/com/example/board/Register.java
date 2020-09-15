@@ -43,7 +43,7 @@ public class Register extends AppCompatActivity {
 
     String F_Name_Holder, EmailHolder, PasswordHolder;
     String finalResult ;
-    String HttpURL = "http://softcodes.tech/noticeboard/register.php";
+    String HttpURL = "http://next256.com/noticeboard/register.php";
     Boolean CheckEditText ;
     ProgressDialog progressDialog;
 
@@ -207,83 +207,4 @@ public class Register extends AppCompatActivity {
         userRegisterFunctionClass.execute(F_Name,email,password);
     }
 
-
-    //coming soon..
-//
-//    @SuppressLint("StaticFieldLeak")
-//    public class Insert extends AsyncTask<String, Void, Boolean> {
-//
-//        ProgressDialog dialog;
-//
-//        @Override
-//        protected void onPreExecute() {
-//            super.onPreExecute();
-//            dialog = new ProgressDialog(Register.this);
-//            dialog.setMessage("saving, please wait");
-//            dialog.setTitle("Connecting... ");
-//            dialog.show();
-//            dialog.setCancelable(false);
-//        }
-//
-//        @Override
-//        protected Boolean doInBackground(String... urls) {
-//            @SuppressLint("WrongThread")
-//            final String entered_mail = reg_mail.getText().toString();
-//            final String entered_name = reg_name.getText().toString();
-//            final String pass =  password_generated.getText().toString();
-//
-//
-//            try {
-//
-//                List<NameValuePair> insert = new ArrayList<NameValuePair>();
-//                insert.add(new BasicNameValuePair("user_email", entered_mail));
-//                insert.add(new BasicNameValuePair("user_name", entered_name));
-//                insert.add(new BasicNameValuePair("user_password", pass));
-//
-//
-//                HttpClient httpClient = new DefaultHttpClient();
-//                HttpPost httpPost = new HttpPost(
-//                        "http://softcodes.tech/noticeboard/register.php"); // link to connect to database
-//                httpPost.setEntity(new UrlEncodedFormEntity(insert));
-//
-//                HttpResponse response = httpClient.execute(httpPost);
-//
-//                HttpEntity entity = response.getEntity();
-//
-//                return true;
-//
-//
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//
-//            }
-//
-//
-//            return false;
-//        }
-//
-//        protected void onPostExecute(Boolean result) {
-//            dialog.cancel();
-//
-//            AlertDialog.Builder ac = new AlertDialog.Builder(Register.this);
-//            ac.setTitle("Creating");
-//            ac.setMessage("Account Created!");
-//            ac.setCancelable(true);
-//            ac.setPositiveButton(
-//                    "Ok",
-//                    new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int id) {
-//                            dialog.cancel();
-//                            reg_mail.setText("");
-//                            reg_name.setText("");
-//                            password_generated.setText("");
-//
-//                        }
-//                    });
-//
-//            AlertDialog alert = ac.create();
-//            alert.show();
-//        }
-//
-//    }
 }

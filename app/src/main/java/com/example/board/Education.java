@@ -31,13 +31,13 @@ import java.util.List;
 public class Education extends AppCompatActivity {
 
 
-    private static final String URL_PRODUCTS = "http://softcodes.tech/newsportal/education_api.php";
+    private static final String URL_PRODUCTS = "http://newsportal.next256.com/education_api.php";
     List<Business_News> productList;
     RecyclerView recyclerView;
     HttpParse httpParse = new HttpParse();
     HashMap<String,String> hashMap = new HashMap<>();
     String finalResult ;
-    String HttpURL = "http://softcodes.tech/newsportal/save_clicked_id.php";
+    String HttpURL = "http://newsportal.next256.com/save_clicked_id.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

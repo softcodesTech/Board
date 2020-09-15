@@ -35,7 +35,7 @@ public class Notice_Videos extends AppCompatActivity implements MediaPlayer.OnCo
         // video name should be in lower case alphabet.
         videolist.add(R.raw.middle);
         videolist.add(R.raw.fishvideo);
-        videolist.add(R.raw.oneday);
+        videolist.add(R.raw.middle);
         setVideo(videolist.get(0));
 
     }

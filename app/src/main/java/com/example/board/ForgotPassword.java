@@ -20,10 +20,9 @@ import java.util.HashMap;
 
 @SuppressWarnings("ALL")
 public class ForgotPassword extends AppCompatActivity {
-EditText email_entered;
-
+    EditText email_entered;
     String finalResult;
-    String HttpURL = "http://softcodes.tech/noticeboard/check_email.php";
+    String HttpURL = "http://newsportal.next256.com/check_email.php";
     ProgressDialog progressDialog;
     public static String UserEmail = "";
     HashMap<String, String> hashMap = new HashMap<>();

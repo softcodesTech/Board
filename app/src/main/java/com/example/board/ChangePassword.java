@@ -138,7 +138,7 @@ public class ChangePassword extends AppCompatActivity {
 
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://softcodes.tech/noticeboard/update_password.php"); // link to connect to database
+                        "http://next256.com/noticeboard/update_password.php"); // link to connect to database
                 httpPost.setEntity(new UrlEncodedFormEntity(insert));
 
                 HttpResponse response = httpClient.execute(httpPost);
