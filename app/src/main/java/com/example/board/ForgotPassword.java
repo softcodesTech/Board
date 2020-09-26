@@ -22,7 +22,7 @@ import java.util.HashMap;
 public class ForgotPassword extends AppCompatActivity {
     EditText email_entered;
     String finalResult;
-    String HttpURL = "http://newsportal.next256.com/check_email.php";
+    String HttpURL = "http://newsportal.softcodes.tech/check_email.php";
     ProgressDialog progressDialog;
     public static String UserEmail = "";
     HashMap<String, String> hashMap = new HashMap<>();

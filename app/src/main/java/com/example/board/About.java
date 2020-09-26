@@ -29,7 +29,7 @@ public class About extends AppCompatActivity {
 
     public void call_pascal(View view) {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:0773833440"));
+        callIntent.setData(Uri.parse("tel:0759020277"));
 
 //        if (ActivityCompat.checkSelfPermission(About.this,
 //                Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {

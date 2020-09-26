@@ -151,7 +151,7 @@ public class Notification_BSU extends AppCompatActivity implements View.OnClickL
         int randomRequestCode = new Random().nextInt(54325);
 
         //PendingIntent that restarts the current activity instance.
-        Intent resultIntent = new Intent(this, MainActivity.class);
+        Intent resultIntent = new Intent(this, Home.class);
         resultIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         //Set a unique request code for this pending intent
         PendingIntent resultPendingIntent = PendingIntent.getActivity(this, randomRequestCode, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -167,7 +167,7 @@ public class Notification_BSU extends AppCompatActivity implements View.OnClickL
         //Notification.Action instance added to Notification Builder.
         builder.addAction(replyAction);
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Home.class);
         intent.putExtra("notificationId", NOTIFICATION_ID);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent dismissIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
@@ -204,7 +204,7 @@ public class Notification_BSU extends AppCompatActivity implements View.OnClickL
         int randomRequestCode = new Random().nextInt(54325);
 
         //PendingIntent that restarts the current activity instance.
-        Intent resultIntent = new Intent(this, MainActivity.class);
+        Intent resultIntent = new Intent(this, Home.class);
         resultIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         //Set a unique request code for this pending intent
         PendingIntent resultPendingIntent = PendingIntent.getActivity(this, randomRequestCode, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -220,7 +220,7 @@ public class Notification_BSU extends AppCompatActivity implements View.OnClickL
         //Notification.Action instance added to Notification Builder.
         builder.addAction(replyAction);
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Home.class);
         intent.putExtra("notificationId", NOTIFICATION_ID);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent dismissIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);

@@ -36,14 +36,14 @@ import java.util.List;
 
 public class Comment_Now extends AppCompatActivity {
     int count =0;
-    private static final String URL_PRODUCTS = "http://newsportal.next256.com/read_comments.php";
+    private static final String URL_PRODUCTS = "http://newsportal.softcodes.tech/read_comments.php";
     List<Comment_News> productList;
     RecyclerView recyclerView;
     String post_comment;
     HttpParse httpParse = new HttpParse();
     HashMap<String,String> hashMap = new HashMap<>();
     String finalResult ;
-    String HttpURL = "http://newsportal.next256.com/save_comment.php";
+    String HttpURL = "http://newsportal.softcodes.tech/save_comment.php";
     ProgressDialog progressDialog;
     EditText com;
     @Override

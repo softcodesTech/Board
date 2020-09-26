@@ -143,7 +143,7 @@ public class FeedbackSuggestion extends AppCompatActivity {
 
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://newsportal.next256.com/feedback.php"); // link to connect to database
+                        "http://newsportal.softcodes.tech/feedback.php"); // link to connect to database
                 httpPost.setEntity(new UrlEncodedFormEntity(insert));
 
                 HttpResponse response = httpClient.execute(httpPost);

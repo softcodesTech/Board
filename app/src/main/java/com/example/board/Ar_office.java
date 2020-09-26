@@ -29,14 +29,14 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Ar_office extends AppCompatActivity {
-    private static final String URL_PRODUCTS = "http://newsportal.next256.com/ar_office_api.php";
+    private static final String URL_PRODUCTS = "http://newsportal.softcodes.tech/ar_office_api.php";
     List<Business_News> productList;
     RecyclerView recyclerView;
 
     HttpParse httpParse = new HttpParse();
     HashMap<String,String> hashMap = new HashMap<>();
     String finalResult ;
-    String HttpURL = "http://newsportal.next256.com/save_clicked_id.php";
+    String HttpURL = "http://newsportal.softcodes.tech/save_clicked_id.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

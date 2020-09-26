@@ -38,7 +38,7 @@ public class Law extends AppCompatActivity {
     HttpParse httpParse = new HttpParse();
     HashMap<String,String> hashMap = new HashMap<>();
     String finalResult ;
-    String HttpURL = "http://newsportal.next256.com/save_clicked_id.php";
+    String HttpURL = "http://newsportal.softcodes.tech/save_clicked_id.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

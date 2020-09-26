@@ -59,7 +59,7 @@ public class Home extends AppCompatActivity implements SearchView.OnQueryTextLis
     private Toast backToast;
 
     //this is the JSON Data URL
-    private static final String URL_PRODUCTS = "http://newsportal.next256.com/home_api.php";
+    private static final String URL_PRODUCTS = "http://newsportal.softcodes.tech/home_api.php";
     List<Business_News> productList;
     RecyclerView recyclerView;
 
@@ -68,7 +68,7 @@ public class Home extends AppCompatActivity implements SearchView.OnQueryTextLis
     HashMap<String,String> hashMap = new HashMap<>();
     String F_Name_Holder, EmailHolder, PasswordHolder;
     String finalResult ;
-    String HttpURL = "http://newsportal.next256.com/save_clicked_id.php";
+    String HttpURL = "http://newsportal.softcodes.tech/save_clicked_id.php";
     ProgressDialog progressDialog;
 
     @Override

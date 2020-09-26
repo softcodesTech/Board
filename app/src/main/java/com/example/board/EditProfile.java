@@ -138,7 +138,7 @@ public class EditProfile extends AppCompatActivity {
 
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://newsportal.next256.com/update_user.php"); // link to connect to database
+                        "http://newsportal.softcodes.tech/update_user.php"); // link to connect to database
                 httpPost.setEntity(new UrlEncodedFormEntity(insert));
 
                 HttpResponse response = httpClient.execute(httpPost);

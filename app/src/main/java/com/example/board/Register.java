@@ -43,7 +43,7 @@ public class Register extends AppCompatActivity {
 
     String F_Name_Holder, EmailHolder, PasswordHolder;
     String finalResult ;
-    String HttpURL = "http://next256.com/noticeboard/register.php";
+    String HttpURL = "http://softcodes.tech/noticeboard/register.php";
     Boolean CheckEditText ;
     ProgressDialog progressDialog;
 
